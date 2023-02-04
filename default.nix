@@ -1,4 +1,4 @@
-{ cmd ? "./rename_documents.py" }:
+{ cmd ? "${builtins.toString ./rename_documents.py}" }:
 
 with import <nixpkgs> { };
 
